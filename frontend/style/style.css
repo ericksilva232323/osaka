@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     background-color: rgba(0, 0, 0, 0.700);
     margin: 0 auto;
     padding: 10px;
 }
 
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -19,25 +19,25 @@ header{
     padding: 10px;
 }
 
-.nav-bar-esq{
+.nav-bar-esq {
     background-color: #c5c5c5;
     padding: 10px;
     border-radius: 15px;
 }
 
-.nav-bar-esq img{
+.nav-bar-esq img {
     width: 60px;
     border-radius: 15px;
     cursor: pointer;
     transition: 0.5s;
 }
 
-.nav-bar-esq img:hover{
+.nav-bar-esq img:hover {
     width: 70px;
     border-radius: 15px;
 }
 
-.nav-bar-dir{
+.nav-bar-dir {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -45,7 +45,7 @@ header{
     border-radius: 15px;
 }
 
-.nav-bar-icon{
+.nav-bar-icon {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -53,22 +53,251 @@ header{
     height: 80px;
 }
 
-.nav-bar-dir svg{
+.nav-bar-dir svg {
     width: 60px;
     height: 20px;
     color: #fff;
     transition: 0.5s;
 }
 
-.nav-bar-dir svg:hover{
+.nav-bar-dir svg:hover {
     width: 70px;
     border-radius: 15px;
     color: #003147;
 }
 
-body{
-    background-image: url(../assets/water.gif);
-    background-size: cover;
-    position: relative;
+main {
+    background-color: rgba(0, 0, 0, 0.700);
+    margin: 0 auto;
+    padding: 10px;
 }
 
+.landing-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    transition: 2s;
+}
+
+.landing-page:hover {
+    background-color: rgba(0, 0, 0, 0.500);
+    transition: 2s;
+}
+
+.landing-describe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c5c5c5;
+    border-radius: 15px;
+    padding: 10px;
+    color: #003147;
+    transition: 2s;
+}
+
+
+.landing-describe:hover {
+    background-color: rgba(0, 0, 0, 0.500);
+    transition: 2s;
+}
+
+.landing-img {
+    background-color: #c5c5c5;
+    padding: 30px;
+    padding-left: 120px;
+    padding-right: 120px;
+    border-radius: 15px;
+    transition: 2s;
+}
+
+.landing-img:hover {
+    background-color: rgba(0, 0, 0, 0.500);
+    transition: 2s;
+}
+
+.landing-img img {
+    border-radius: 15px;
+}
+
+body {
+    background-image: url(../assets/water.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+}
+
+.button-area {
+    background-color: rgba(0, 0, 0, 0.700);
+    margin: 0 auto;
+    padding: 50px;
+    align-items: center;
+    transition: 2s;
+}
+
+.button-area:hover {
+    background-color: rgba(0, 0, 0, 0.300);
+    transition: 2s;
+
+}
+
+.button-area-general {
+    display: flex;
+    justify-content: center;
+    background-color: #c5c5c5;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 2s;
+}
+
+.button-area-general:hover {
+    background-color: rgba(0, 0, 0, 0.500);
+    transition: 2s;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    align-items: center;
+    justify-content: center;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+    color: #fff;
+}
+
+
+.forms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 2s;
+}
+
+.forms:hover {
+    background-color: rgba(0, 0, 0, 0.700);
+    transition: 2s;
+   
+}
+
+.form-reg {
+    display: flex;
+    flex-direction: column;
+    margin: 90px;
+    padding: 90px;
+    background-color: #c5c5c5;
+    border-radius: 15px;
+    gap: 40px;
+}
+
+.form-reg-esq input{
+    border-radius: 5px;
+    width: 360px;
+    height: 40px;
+}
+
+.form-travel {
+    display: flex;
+    flex-direction: column;
+    margin: 90px;
+    padding: 90px;
+    background-color: #c5c5c5;
+    border-radius: 15px;
+    gap: 40px;
+}
+
+.form-travel-dir input{
+    border-radius: 5px;
+    width: 360px;
+    height: 40px;
+}
