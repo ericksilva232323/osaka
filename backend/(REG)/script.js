@@ -20,7 +20,7 @@ function addAppointment(name, email, number, pass, local, date, hours, comment) 
     const addAppointmentsList = document.getElementById('appoitments-list');
     const listItem = document.createElement('li');
     listItem.innerHTML = `
-    <span>${name} - ${email} - ${number} - ${pass} - ${local} - ${new Date(date).toLocaleString()} - ${new hours(hours).toLocaleString()} - ${comment}</span>
+    <span>${name} - ${email} - ${number} - ${pass} - ${local} - ${new date(date).toLocaleString()} - ${new hours(hours).toLocaleString()} - ${comment}</span>
     <div>
         <button class="edit-button">Edit</button>
         <button class="complete-button">Conclue</button>

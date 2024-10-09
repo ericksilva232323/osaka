@@ -63,7 +63,7 @@ header {
 .nav-bar-dir svg:hover {
     width: 70px;
     border-radius: 15px;
-    color: #003147;
+    color: rgba(0, 0, 0, 0.700);
 }
 
 main {
