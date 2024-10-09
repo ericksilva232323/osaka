@@ -1,4 +1,4 @@
-documento.getElementById('fomrs').addEventListener('submit', function (event) {
+document.getElementById('forms').addEventListener('submit', function (event) {
     event.preventDefault();
 
     const name = document.getElementById('name').value;
@@ -37,7 +37,7 @@ function addAppointment(name, email, number, pass, local, date, hours, comment) 
 
 function editAppointment(listItem, name, email, number, pass, local, date, hours, comment) {
     const newName = prompt("Edit name:", name);
-    const newEamil = prompt("Edit email:", email);
+    const newEmail = prompt("Edit email:", email);
     const newNumber = prompt("Edit number:", number);
     const newPass = prompt("Edit passwork:", pass);
     const newLocal = prompt("Edit local", local);
@@ -46,13 +46,13 @@ function editAppointment(listItem, name, email, number, pass, local, date, hours
     const newComment = prompt("Edit comments:", comment);
 
     if (newName) {
-        listItem.querySelector('span').textContent = ` ${name} - ${email} - ${number} - ${pass} - ${local} - ${new Date(date).toLocaleString()} - ${new hours(hours).toLocaleString()} - ${comment} `;
+        listItem.querySelector('span').textContent = ` ${newName} - ${newEmail} - ${newNumber} - ${newPass} - ${newLocal} - ${new newDate(date).toLocaleString()} - ${new newHours(hours).toLocaleString()} - ${newComment} `;
     }
 }
 
-function completeAppointment(listItem){
+function completeAppointment(listItem) {
     const confirmRemoval = confirm("REMOVE IS LIST??");
-    if(confirmRemoval){
+    if (confirmRemoval) {
         listItem.remove();
     }
 }
