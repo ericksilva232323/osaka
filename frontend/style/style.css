@@ -341,11 +341,6 @@ li {
     align-items: center;
 }
 
-.completed {
-    text-decoration: line-through;
-    color: gray;
-}
-
 .edit-button, .complete-button {
     margin-left: 10px;
     cursor: pointer;
