@@ -267,7 +267,6 @@ button:hover .button-text {
 .forms:hover {
     background-color: rgba(0, 0, 0, 0.700);
     transition: 2s;
-   
 }
 
 .form-reg {
@@ -300,4 +299,54 @@ button:hover .button-text {
     border-radius: 5px;
     width: 360px;
     height: 40px;
+}
+
+.submit{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin: 10px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #c5c5c5;
+    transition: 2s;
+}
+
+.submit:hover{
+    background-color: rgba(0, 0, 0, 0.700);
+    transition: 2s;
+}
+
+.submit input{
+    border-radius: 5px;
+    width: 360px;
+    height: 40px;
+    font-family:sans-serif; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f8f9fa;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.edit-button, .complete-button {
+    margin-left: 10px;
+    cursor: pointer;
 }
